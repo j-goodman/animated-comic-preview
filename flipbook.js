@@ -4,7 +4,7 @@ let Flipbook = function (imageSource, frameCount, container) {
     this.image = document.createElement('div')
     this.image.style.backgroundImage = `url('${imageSource}')`
     this.index = 0
-    this.scale = .2
+    this.scale = 1
     this.frameCount = frameCount
     container.appendChild(this.image)
     this.absoluteImage.addEventListener('load', () => {
