@@ -20,14 +20,16 @@ function Panel (obj) {
 let drawPanels = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     let objectiveScroll = window.scrollY
+    let totalSlide = 0
     panels.map((panel, index) => {
         let anchor = height(panel, canvas) * index
         let slide = panel.frames * frameRate
-        if (window.scrollY > anchor && window.scrollY < anchor + slide) {
+        if (objectiveScroll > anchor && window.scrollY < anchor + slide) {
             objectiveScroll = anchor
             panel.frame = Math.floor(window.scrollY / (anchor + slide) * panel.frames)
-        } else if (window.scrollY > anchor + slide) {
+        } else if (objectiveScroll > anchor + slide) {
             objectiveScroll -= slide
+            totalSlide += slide
         }
         let scrollOffset = anchor - objectiveScroll
         let frameOffset = panel.frame * canvas.width
