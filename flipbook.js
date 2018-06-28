@@ -12,7 +12,7 @@ let setupCanvas = () => {
 let resizeEvent = () => {
     // Set the canvas width and height to the screensize of the reader's device
     canvas.height = window.innerHeight
-    canvas.width = window.innerWidth
+    canvas.width = canvas.getBoundingClientRect().width
     drawPanels()
 }
 
@@ -58,7 +58,7 @@ let drawPanels = () => {
 
 let height = (panel, canvas) => {
     // Return the height that an image should be drawn with
-    return (panel.image.width / panel.frames * window.innerWidth) / panel.image.height
+    return (panel.image.width / panel.frames * canvas.getBoundingClientRect().width) / panel.image.height
 }
 
 let panels = [
