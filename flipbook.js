@@ -3,9 +3,14 @@ let ctx = null
 let frameRate = 100
 
 let setupCanvas = () => {
-    // Set the canvas width and height to the screensize of the reader's device
+    // Assign canvas variables, set canvas size, and draw panels
     canvas = document.getElementById('canvas')
     ctx = canvas.getContext('2d')
+    resizeEvent()
+}
+
+let resizeEvent = () => {
+    // Set the canvas width and height to the screensize of the reader's device
     canvas.height = window.innerHeight
     canvas.width = window.innerWidth
     drawPanels()
@@ -81,3 +86,4 @@ let panels = [
 
 window.addEventListener('load', setupCanvas)
 window.addEventListener('scroll', drawPanels)
+window.addEventListener('resize', resizeEvent)
