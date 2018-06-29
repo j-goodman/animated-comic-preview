@@ -63,6 +63,11 @@ let height = (panel, canvas) => {
 
 let panels = [
     new Panel ({
+        name: 'line-2',
+        imageSource: 'images/deeps-demo-lineart.png',
+        frames: 7,
+    }),
+    new Panel ({
         name: 'color-1',
         imageSource: 'images/deeps-demo-color.png',
         frames: 7,
@@ -75,11 +80,6 @@ let panels = [
     new Panel ({
         name: 'color-2',
         imageSource: 'images/deeps-demo-color.png',
-        frames: 7,
-    }),
-    new Panel ({
-        name: 'line-2',
-        imageSource: 'images/deeps-demo-lineart.png',
         frames: 7,
     }),
 ]
