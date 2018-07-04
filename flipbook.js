@@ -31,8 +31,10 @@ let drawPanels = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     let objectiveScroll = window.scrollY
     let totalFrames = 0
+    let totalAnchor = 0
     panels.map((panel, index) => {
-        let anchor = height(panel, canvas) * index
+        anchor = totalAnchor
+        totalAnchor += height(panel, canvas)
         let slide = panel.frames * frameRate
         if (objectiveScroll > anchor && objectiveScroll < anchor + slide) {
             objectiveScroll = anchor
@@ -58,29 +60,19 @@ let drawPanels = () => {
 
 let height = (panel, canvas) => {
     // Return the height that an image should be drawn with
-    return (panel.image.width / panel.frames * canvas.getBoundingClientRect().width) / panel.image.height
+    return panel.image.height * canvas.width / (panel.image.width / panel.frames)
 }
 
 let panels = [
     new Panel ({
-        name: 'line-2',
-        imageSource: 'images/deeps-demo-lineart.png',
-        frames: 7,
-    }),
-    new Panel ({
-        name: 'color-1',
+        name: 'anchor',
         imageSource: 'images/deeps-demo-color.png',
         frames: 7,
     }),
     new Panel ({
-        name: 'line-1',
-        imageSource: 'images/deeps-demo-lineart.png',
-        frames: 7,
-    }),
-    new Panel ({
-        name: 'color-2',
-        imageSource: 'images/deeps-demo-color.png',
-        frames: 7,
+        name: 'submersible',
+        imageSource: 'images/submersible.png',
+        frames: 8,
     }),
 ]
 
