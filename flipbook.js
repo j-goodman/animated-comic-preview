@@ -74,6 +74,11 @@ let panels = [
         imageSource: 'images/submersible.png',
         frames: 16,
     }),
+    new Panel ({
+      name: 'building',
+      imageSource: 'images/building-lineart.png',
+      frames: 12,
+    }),
 ]
 
 window.addEventListener('load', setupCanvas)
