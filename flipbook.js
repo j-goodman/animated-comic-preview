@@ -72,7 +72,7 @@ let panels = [
     new Panel ({
         name: 'submersible',
         imageSource: 'images/submersible.png',
-        frames: 8,
+        frames: 16,
     }),
 ]
 
