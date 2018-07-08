@@ -75,9 +75,9 @@ let panels = [
         frames: 16,
     }),
     new Panel ({
-      name: 'building',
-      imageSource: 'images/building-lineart.png',
-      frames: 12,
+        name: 'building',
+        imageSource: 'images/building.png',
+        frames: 1,
     }),
 ]
 
