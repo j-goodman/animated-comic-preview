@@ -79,6 +79,11 @@ let panels = [
         imageSource: 'images/building.png',
         frames: 1,
     }),
+    new Panel ({
+        name: 'towerpan',
+        imageSource: 'images/towerpan-2.png',
+        frames: 13,
+    }),
 ]
 
 window.addEventListener('load', setupCanvas)
