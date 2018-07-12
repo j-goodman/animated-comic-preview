@@ -82,7 +82,7 @@ let panels = [
     new Panel ({
         name: 'towerpan',
         imageSource: 'images/towerpan-2.png',
-        frames: 13,
+        frames: 25,
     }),
 ]
 
