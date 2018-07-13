@@ -67,7 +67,7 @@ let panels = [
     new Panel ({
         name: 'color-tower',
         imageSource: 'images/towerpan-color.png',
-        frames: 10,
+        frames: 12,
     }),
     new Panel ({
         name: 'anchor',
