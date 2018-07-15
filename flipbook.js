@@ -67,7 +67,7 @@ let panels = [
     new Panel ({
         name: 'color-tower',
         imageSource: 'images/towerpan-color.png',
-        frames: 14,
+        frames: 29,
     }),
     new Panel ({
         name: 'anchor',
@@ -78,16 +78,6 @@ let panels = [
         name: 'submersible',
         imageSource: 'images/submersible.png',
         frames: 16,
-    }),
-    new Panel ({
-        name: 'towerpan',
-        imageSource: 'images/towerpan-2.png',
-        frames: 25,
-    }),
-    new Panel ({
-        name: 'building',
-        imageSource: 'images/building.png',
-        frames: 1,
     }),
 ]
 
