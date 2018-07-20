@@ -70,14 +70,19 @@ let panels = [
         frames: 29,
     }),
     new Panel ({
-        name: 'anchor',
-        imageSource: 'images/deeps-demo-color.png',
-        frames: 7,
+        name: 'title',
+        imageSource: 'images/title.png',
+        frames: 18,
     }),
     new Panel ({
         name: 'submersible',
         imageSource: 'images/submersible.png',
         frames: 16,
+    }),
+    new Panel ({
+        name: 'anchor',
+        imageSource: 'images/deeps-demo-color.png',
+        frames: 7,
     }),
 ]
 
