@@ -80,6 +80,11 @@ let panels = [
         frames: 16,
     }),
     new Panel ({
+      name: 'artaxerxes',
+      imageSource: 'images/artaxerxes.png',
+      frames: 10,
+    }),
+    new Panel ({
         name: 'towerpan',
         imageSource: 'images/towerpan-2.png',
         frames: 25,
