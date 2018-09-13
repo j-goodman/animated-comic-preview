@@ -67,12 +67,12 @@ let panels = [
     new Panel ({
         name: 'color-tower',
         imageSource: 'images/towerpan-color.png',
-        frames: 14,
+        frames: 29,
     }),
     new Panel ({
-        name: 'anchor',
-        imageSource: 'images/deeps-demo-color.png',
-        frames: 7,
+        name: 'title',
+        imageSource: 'images/title.png',
+        frames: 18,
     }),
     new Panel ({
         name: 'submersible',
@@ -90,9 +90,9 @@ let panels = [
         frames: 25,
     }),
     new Panel ({
-        name: 'building',
-        imageSource: 'images/building.png',
-        frames: 1,
+        name: 'anchor',
+        imageSource: 'images/deeps-demo-color.png',
+        frames: 7,
     }),
 ]
 
