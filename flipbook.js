@@ -80,9 +80,9 @@ let panels = [
         frames: 16,
     }),
     new Panel ({
-      name: 'artaxerxes',
-      imageSource: 'images/artaxerxes.png',
-      frames: 10,
+      name: 'space-jump',
+      imageSource: 'images/space-jump.png',
+      frames: 36,
     }),
     new Panel ({
         name: 'towerpan',
