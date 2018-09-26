@@ -7,6 +7,7 @@ let setupCanvas = () => {
     canvas = document.getElementById('canvas')
     ctx = canvas.getContext('2d')
     resizeEvent()
+    document.getElementById('loader-note').innerText = ''
 }
 
 let resizeEvent = () => {
@@ -78,16 +79,6 @@ let panels = [
         name: 'submersible',
         imageSource: 'images/submersible.png',
         frames: 16,
-    }),
-    new Panel ({
-      name: 'space-jump',
-      imageSource: 'images/space-jump.png',
-      frames: 36,
-    }),
-    new Panel ({
-        name: 'towerpan',
-        imageSource: 'images/towerpan-2.png',
-        frames: 25,
     }),
     new Panel ({
         name: 'anchor',
